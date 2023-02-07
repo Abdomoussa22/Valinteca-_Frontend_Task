@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/register.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-register">
+        <img src="./images/img2.png" alt="image-register" />
+      </div>
+      <div class="create-account">
+        <h1>Create Account</h1>
+        <p>Go ahead and sign up, let everyone know how awesome you are!</p>
+        <form id="registerForm">
+          <p id="error-fromApi"></p>
+          <div>
+            <div class="typeForm">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                required
+                placeholder="Username"
+              />
+            </div>
+            <div id="usernameError" class="error"></div>
+          </div>
+          <div class="input-container">
+            <div class="typeForm">
+              <i class="fa-regular fa-envelope"></i>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Email"
+              />
+            </div>
+            <div id="emailError" class="error"></div>
+          </div>
+          <div class="input-container">
+            <div class="typeForm">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                placeholder="Password"
+              />
+            </div>
+            <div id="passwordError" class="error"></div>
+          </div>
+          <div class="input-container">
+            <div class="typeForm">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                id="passwordConfirm"
+                name="password_confirmation"
+                required
+                placeholder="passwordConfirm"
+              />
+            </div>
+            <div id="passwordConfirmError" class="error"></div>
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
+      </div>
+    </div>
+    <script src="./JS/register.js"></script>
+  </body>
+</html>

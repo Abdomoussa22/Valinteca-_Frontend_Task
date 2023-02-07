@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif ;
+}
+body {
+  max-height: 100vh;
+  background-image: url(../images/BG.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 100px;
+  gap: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  gap: 60px;
+  width: 1080px;
+  height: 435px;
+  background: rgba(245, 247, 255, 0.85);
+  border-radius: 10px;
+}
+.container .image-welcome img{
+  max-width: 100%;
+}
+.container .text-welcome button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+  width: 387px;
+  height: 60px;
+  color: #ffffff;
+  cursor: pointer;
+  background: linear-gradient(113.87deg, #2663df 14.81%, #758ff0 88.76%);
+  box-shadow: 0px 6px 18px #9cadf2;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  font-family: 'Open Sans', sans-serif ;
+}
+.container .text-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: left;
+  gap: 20px;
+}
+.container .text-welcome h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 67px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #2D2D2D;
+}
+.container .text-welcome p {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    align-self: stretch;
+}
+/*#############MEDIA QUIRES (MEDIUM DEVICES)###############*/
+@media screen and (max-width: 1024px) {
+    body {
+        height: 100vh;
+      }
+    .container{
+        width: 90%;
+        height: 100vh;
+        flex-wrap: wrap;
+        gap: 30px;
+       
+    }
+    .container .text-welcome {
+        text-align: center;
+        align-items: center;
+    }
+    .container .image-welcome img {
+        width: fit-content;
+      }
+      .container .text-welcome button {
+        max-width: 360px;
+      }
+      .container .text-welcome h1 {
+        font-size: 46px;
+      }
+      .container .text-welcome p{
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+}
+/*#############MEDIA QUIRES (SMALL DEVICES)###############*/
+@media screen and (max-width: 600px) {
+  body {
+    height: auto;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+    gap: 40px;
+    width: 375px;
+    height: 647px;
+    background: rgba(245, 247, 255, 0.85);
+    border-radius: 10px;
+  }
+  .container .image-welcome img {
+    width: 315px;
+    height: 315px;
+    border-radius: 10px;
+  }
+  .container .text-welcome {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .container .text-welcome h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .container .text-welcome p {
+    height: 52px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .text-welcome button {
+    width: 315px;
+    height: 60px;
+  }
+}
